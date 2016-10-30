@@ -13,6 +13,13 @@ import java.awt.image.BufferedImage;
  */
 public class Embeding {
  
+    /**
+     *
+     * @param cipher
+     * @param coverImage
+     * @return
+     * @throws Exception
+     */
     public static BufferedImage Embed(String cipher, BufferedImage coverImage) throws Exception{
         int[] redAndBlueComponents = Operation.getRedAndBlueComponent(coverImage);
         int[] greenComponent = Operation.WriteMessageLength(coverImage, cipher.length());
